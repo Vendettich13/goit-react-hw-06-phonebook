@@ -39,7 +39,7 @@ export function Form() {
 
     const isExist = contacts.find(contact => { return contact.name === name })
       if (isExist) {
-          return toast.warn(`${name} is already in contacts.`, {autoClose: 4000})
+          return toast.warn(`${name} is already in contacts.`)
     };
     
     dispatch(addContact(name, number));
